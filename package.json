@@ -24,10 +24,10 @@
   },
   "scripts": {
     "format": "prettier --write .",
-    "dev": "next dev --turbopack",
+    "dev": "node api.js && next dev --turbopack",
     "build": "pnpm registry:build && pnpm format && next build",
     "registry:build": "shadcn build",
-    "start": "next start",
+    "start": "node api.js && next start",
     "lint": "next lint"
   },
   "dependencies": {
